@@ -5,12 +5,21 @@ import styled from "styled-components";
 
 function Navbar() {
   return (
-    <Nav>
-      <GiKnifeFork />
-      <Logo to={"/"}>Food Recipe</Logo>
-    </Nav>
+    <NavWrapper>
+      <Nav>
+        <GiKnifeFork />
+        <Logo to={"/"}>Food Recipe</Logo>
+      </Nav>
+      <Button>Login</Button>
+    </NavWrapper>
   );
 }
+
+const NavWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
 
 const Logo = styled(Link)`
   text-decoration: none;
@@ -28,6 +37,16 @@ const Nav = styled.div`
   svg {
     font-size: 2rem;
   }
+`;
+
+const Button = styled.button`
+  background: linear-gradient(35deg, #494949, #313131);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
 `;
 
 export default Navbar;
