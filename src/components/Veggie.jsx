@@ -5,10 +5,6 @@ import styled from "styled-components";
 function Veggie() {
   const [veggie, setVeggie] = useState([]);
 
-  useEffect(() => {
-    getVeggie();
-  }, []);
-
   const getVeggie = async () => {
     const check = localStorage.getItem("veggie");
 
@@ -24,6 +20,10 @@ function Veggie() {
       setVeggie(data.recipes);
     }
   };
+
+  useEffect(() => {
+    getVeggie();
+  }, []);
 
   return (
     <div>
