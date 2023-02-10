@@ -53,6 +53,22 @@ const FormStyle = styled.form`
     transform: translate(100%, -50%);
     color: white;
   }
+
+  @media (max-width: 375px) {
+    margin: 0rem 1rem;
+  }
+  @media (max-width: 425px) {
+    margin: 0rem 1rem;
+  }
+  @media (max-width: 768px) {
+    margin: 0rem 2rem;
+  }
+  @media (max-width: 1024px) {
+    margin: 0rem 3rem;
+  }
+  @media (max-width: 1440px) {
+    margin: 0rem 8rem;
+  }
 `;
 
 export default Search;
