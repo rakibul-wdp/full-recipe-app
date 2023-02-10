@@ -7,15 +7,15 @@ import Pages from "./pages/Pages";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Nav>
-        <GiKnifeFork />
-        <Logo to={"/"} >Food Recipe</Logo>
-      </Nav>
-      <Search />
-      <Category />
-      <Pages />
-    </BrowserRouter>
+      <BrowserRouter>
+        <Nav>
+          <GiKnifeFork />
+          <Logo to={"/"}>Food Recipe</Logo>
+        </Nav>
+        <Search />
+        <Category />
+        <Pages />
+      </BrowserRouter>
   );
 }
 
